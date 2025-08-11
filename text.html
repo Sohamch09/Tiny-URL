@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Shortener</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+  <div class="container">
+    <h1>🔗 TinyURL Shortener</h1>
+
+    <div class="form-group">
+      <input type="text" id="longUrl" placeholder="Paste your long URL here..." />
+      <button onclick="shortenURL()">Shorten</button>
+    </div>
+
+    <div class="result" id="shortUrl"></div>
+    <div class="error" id="errorMsg"></div>
+  </div>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🔗 TinyURL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button onclick="toggleTheme()" class="theme-toggle">Dark/Light Mode</button>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>🔗 TinyURL Shortener</h1>
+
+    <div class="form-group">
+      <input type="url" id="longUrl" placeholder="Paste your long URL here..." autocomplete="off" />
+      <button onclick="shortenURL()">Shorten</button>
+    </div>
+
+    <div class="result" id="shortUrl"></div>
+    <div class="tools">
+      <button id="copyBtn" onclick="copyToClipboard()" style="display:none;">📋 Copy Link</button>
+      <div id="qrCode" style="margin-top: 20px;"></div>
+    </div>
+
+    <div class="error" id="errorMsg"></div>
+
+    <div class="history" id="history">
+      <h3>🔁 History</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
