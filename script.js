@@ -36,7 +36,7 @@ async function shortenURL() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer your_api_key_here"
+        "Authorization": "Bearer your_api_key_here" // Replace with your TinyURL API key
       },
       body: JSON.stringify({
         url: longUrl,
